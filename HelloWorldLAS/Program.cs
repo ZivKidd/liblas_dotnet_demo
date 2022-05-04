@@ -47,9 +47,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        AppDomain.CurrentDomain.SetData("PRIVATE_BINPATH", "lib;");
-        AppDomain.CurrentDomain.SetData("BINPATH_PROBE_ONLY", "lib;");
-
         try
         {
             LASReader lasreader = new LASReader("40.las");
